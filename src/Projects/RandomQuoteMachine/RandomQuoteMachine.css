@@ -1,0 +1,47 @@
+#randomQuoteMachine,
+#randomQuoteMachine #quote-box,
+#randomQuoteMachine #quote-box #quote-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#randomQuoteMachine {
+  color: black;
+  height: 100vh;
+  width: 100%;
+  padding: 25px;
+  background: transparent;
+}
+#randomQuoteMachine #quote-box {
+  margin: auto;
+}
+#randomQuoteMachine #quote-box #quote-content {
+  height: 250px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
+@media (orientation: portrait) {
+  #randomQuoteMachine #quote-box #quote-content {
+    height: 60vh;
+  }
+}
+#randomQuoteMachine #quote-box #quote-content #text {
+  text-align: center;
+  font-size: 2em;
+}
+#randomQuoteMachine #quote-box #quote-content #author {
+  text-align: right;
+  font-size: 1.5rem;
+}
+#randomQuoteMachine #quote-box #tweet-quote {
+  display: inline-block;
+  transform: translate(-60%, 0%);
+}
+#randomQuoteMachine #quote-box button {
+  display: inline-block;
+  transform: translate(60%, -100%);
+}

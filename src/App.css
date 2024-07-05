@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#root{
+    position: relative;
+    background-image:  linear-gradient(to bottom left, white, black, red, green, blue);
+    background-attachment: fixed;
+}

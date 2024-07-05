@@ -1,0 +1,157 @@
+#markdownPreviwer {
+  background: transparent;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 1rem;
+}
+#markdownPreviwer .editorWrap,
+#markdownPreviwer .previewWrap {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid black;
+  border-top: none;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 1px 1px 10px 2px magenta;
+}
+#markdownPreviwer .editorWrap .toolbar,
+#markdownPreviwer .previewWrap .toolbar {
+  background: rgba(255, 0, 255, 0.6);
+  display: flex;
+  align-items: center;
+  padding: 0.3rem;
+  border: 1px solid black;
+  box-shadow: 1px 1px 10px 2px rgb(255, 0, 255);
+  font-weight: bold;
+}
+#markdownPreviwer .editorWrap .toolbar i,
+#markdownPreviwer .previewWrap .toolbar i {
+  width: 25px;
+  margin-left: 5px;
+}
+#markdownPreviwer .editorWrap .toolbar .fa-free-code-camp,
+#markdownPreviwer .previewWrap .toolbar .fa-free-code-camp {
+  margin-right: 3px;
+}
+#markdownPreviwer .editorWrap .toolbar .fa-arrows-alt,
+#markdownPreviwer .editorWrap .toolbar .fa-compress,
+#markdownPreviwer .previewWrap .toolbar .fa-arrows-alt,
+#markdownPreviwer .previewWrap .toolbar .fa-compress {
+  margin-left: auto;
+}
+#markdownPreviwer .editorWrap .toolbar .fa-arrows-alt:hover,
+#markdownPreviwer .editorWrap .toolbar .fa-compress:hover,
+#markdownPreviwer .previewWrap .toolbar .fa-arrows-alt:hover,
+#markdownPreviwer .previewWrap .toolbar .fa-compress:hover {
+  color: red;
+  cursor: pointer;
+}
+#markdownPreviwer .editorWrap {
+  max-width: 600px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 850px) {
+  #markdownPreviwer .editorWrap {
+    max-width: 550px;
+  }
+}
+@media screen and (max-width: 650px) {
+  #markdownPreviwer .editorWrap {
+    width: 80vw;
+    margin: 0 auto;
+  }
+}
+#markdownPreviwer .editorWrap textarea {
+  background: transparent;
+  width: 100%;
+  min-height: 200px;
+  margin-bottom: -5px;
+  resize: vertical;
+  outline: none;
+  padding-left: 5px;
+  padding-top: 5px;
+  font-size: 0.875rem;
+}
+#markdownPreviwer .converter {
+  width: 100px;
+  text-align: center;
+  font-size: 35px;
+  margin: auto;
+}
+#markdownPreviwer .previewWrap {
+  max-width: 800px;
+  margin: 1.25rem auto 0;
+  min-height: 200px;
+  overflow-wrap: break-word;
+}
+@media screen and (max-width: 850px) {
+  #markdownPreviwer .previewWrap {
+    max-width: 630px;
+  }
+}
+@media screen and (max-width: 650px) {
+  #markdownPreviwer .previewWrap {
+    width: 90vw;
+  }
+}
+#markdownPreviwer .maximized {
+  width: 96%;
+  min-height: 100vh;
+  margin: auto;
+}
+@media screen and (max-width: 650px) {
+  #markdownPreviwer .maximized {
+    width: 95%;
+    margin: auto;
+  }
+}
+#markdownPreviwer .maximized textarea {
+  min-height: 95vh;
+  resize: none;
+}
+#markdownPreviwer .hide {
+  display: none;
+}
+#markdownPreviwer #preview {
+  padding: 0 1rem;
+}
+#markdownPreviwer #preview blockquote {
+  border-left: 3px solid red;
+  color: red;
+  padding-left: 5px;
+  margin-left: 25px;
+}
+#markdownPreviwer #preview > p > code {
+  padding: 3px;
+}
+#markdownPreviwer #preview code {
+  background: rgba(255, 255, 255, 0);
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+#markdownPreviwer #preview pre {
+  display: block;
+  overflow: auto;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 5px;
+  line-height: 1.2;
+}
+#markdownPreviwer #preview h1 {
+  border-bottom: 2px solid #ff0;
+}
+#markdownPreviwer #preview h2 {
+  border-bottom: 1px solid #ff0;
+}
+#markdownPreviwer #preview table {
+  border-collapse: collapse;
+}
+#markdownPreviwer #preview td,
+#markdownPreviwer #preview th {
+  border: 2px solid #a20;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#markdownPreviwer #preview img {
+  display: block;
+  max-width: 90%;
+  margin: 2rem auto;
+}
