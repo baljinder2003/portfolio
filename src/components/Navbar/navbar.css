@@ -12,6 +12,9 @@
   height: 50px;
   width: 100%;
 }
+#navbar .hidden {
+  display: none !important;
+}
 #navbar #nav-left {
   height: inherit;
   min-width: 30px;
@@ -24,14 +27,37 @@
 }
 #navbar #nav-right {
   height: inherit;
-  width: 70%;
+  width: 100%;
   min-width: 70px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
+#navbar #nav-right li {
+  position: relative;
+}
 #navbar #nav-right li a {
-  color: white;
+  color: white !important;
+}
+#navbar #nav-right li:hover {
+  background: repeating-linear-gradient(to right, #a2682a 0%, #be8c3c 8%, #be8c3c 18%, #d3b15f 27%, #faf0a0 35%, #ffffc2 40%, #faf0a0 50%, #d3b15f 58%, #be8c3c 67%, #b17b32 77%, #bb8332 83%, #d4a245 88%, #e1b453 93%, #a4692a 100%);
+  transition: 0.4s all ease;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#navbar #nav-right li:hover::before {
+  width: 100%;
+  left: 0;
+}
+#navbar #nav-right li::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.5s ease;
+  background: repeating-linear-gradient(to right, #a2682a 0%, #be8c3c 8%, #be8c3c 18%, #d3b15f 27%, #faf0a0 35%, #ffffc2 40%, #faf0a0 50%, #d3b15f 58%, #be8c3c 67%, #b17b32 77%, #bb8332 83%, #d4a245 88%, #e1b453 93%, #a4692a 100%);
 }
 #navbar #nav-right .dropdown {
   height: inherit;
@@ -62,10 +88,13 @@
   z-index: 1;
 }
 #navbar #nav-right .dropdown .dropdown-content .section {
+  -webkit-text-fill-color: white;
   margin-right: 10px;
 }
 #navbar #nav-right .dropdown .dropdown-content .section:hover .title {
-  color: magenta;
+  background: repeating-linear-gradient(to right, #a4692a 0%, #e1b453 7%, #d4a245 12%, #bb8332 17%, #b17b32 23%, #be8c3c 33%, #d3b15f 42%, #faf0a0 50%, #ffffc2 55%, #faf0a0 60%, #d3b15f 68%, #be8c3c 77%, #be8c3c 87%, #a2682a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #navbar #nav-right .dropdown .dropdown-content .section .title {
   font-weight: 900;
@@ -77,5 +106,7 @@
   display: block;
 }
 #navbar #nav-right .dropdown .dropdown-content .section .content a:hover {
-  color: red;
+  background: repeating-linear-gradient(to right, #a2682a 0%, #be8c3c 8%, #be8c3c 18%, #d3b15f 27%, #faf0a0 35%, #ffffc2 40%, #faf0a0 50%, #d3b15f 58%, #be8c3c 67%, #b17b32 77%, #bb8332 83%, #d4a245 88%, #e1b453 93%, #a4692a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

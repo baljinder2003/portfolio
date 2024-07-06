@@ -5,6 +5,7 @@
 }
 #root{
     position: relative;
+    min-height: 100vh;
     background-image:  linear-gradient(to bottom left, white, black, red, green, blue);
     background-attachment: fixed;
 }

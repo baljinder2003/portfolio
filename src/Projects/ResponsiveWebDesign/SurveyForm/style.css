@@ -1,0 +1,97 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://i.pinimg.com/736x/30/c7/3f/30c73f95cf6e731ef9669c24a8ecbb1e.jpg);
+    background-attachment: fixed;
+    height: 100vh;
+  }
+  body div#container {
+    height: 90%;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  @media only screen and (orientation: portrait) {
+    body div#container {
+      width: 90%;
+    }
+  }
+  body div#container header {
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    height: 20%;
+  }
+  body div#container header p#description {
+    margin-top: 16px;
+  }
+  body div#container form#survey-form {
+    height: 80%;
+    border-radius: 0px 0px 10px 10px;
+  }
+  body div#container form#survey-form .form-inputs,
+  body div#container form#survey-form #dropdown,
+  body div#container form#survey-form .submit-button,
+  body div#container form#survey-form textarea {
+    color: black;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0%;
+    font-size: 1rem;
+  }
+  body div#container header,
+  body div#container form {
+    word-break: break-all;
+    overflow: auto;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(38, 35, 39, 0.7) 20%, rgba(128, 120, 133, 0.7) 100%);
+    color: white;
+    font-weight: 900;
+    border-left: 0.5em solid rgba(255, 0, 0, 0.7);
+    border-right: 0.5em solid rgba(255, 0, 0, 0.7);
+    padding: 1%;
+    transition: ease-out;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: pink;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: pink;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    display: none;
+  }
+  
+  @keyframes example {
+    0% {
+      width: 0px;
+      font-size: 0px;
+      transform: translate(-50%);
+    }
+    100% {
+      width: 100%;
+    }
+  }
