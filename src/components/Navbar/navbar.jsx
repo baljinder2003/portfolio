@@ -1,12 +1,16 @@
 import React from 'react';
+import './navbar.css';
 import { BrowserRouter as Router, Route, Link, Routes, useLocation } from 'react-router-dom';
+
 import Home from '../FrontPage/home/home';
+
 import RandomQuoteMachine from '../../Projects/React/RandomQuoteMachine/RandomQuoteMachine';
 import MarkdownPreviwer from '../../Projects/React/Markdown Previwer/MarkdownPreviewer';
 import DrumMachine from '../../Projects/React/DrumMachine/DrumMachine';
 import JavaScriptCalculator from '../../Projects/React/JavaScript Calculator/JavaScriptCalculator';
 import Clock from '../../Projects/React/25clock/25clock';
-import './navbar.css';
+
+import SurveyForm from '../../Projects/ResponsiveWebDesign/SurveyForm/surveyform'
 
 const DDSection = (props) => {
   const list = [];
@@ -15,7 +19,7 @@ const DDSection = (props) => {
   }
   return (
     <div className="section">
-      <span className='title'>{props.gname.replace(' ', `\u00A0`)}</span>
+      <span className='title'>{props.gname.replace(/\s+/g, `\u00A0`)}</span>
       <div className='content'>
         {list}
       </div>
@@ -40,7 +44,9 @@ const Navbar = () => {
               name={['Random Quote Machine', "Markdown Previewer", 'Drum Machine', 'JavaScript Calculator', '25 + 5 Clock']}
               link={['RQM', 'MP', 'DM', 'JC', 'C']} />
             <DDSection
-              gname='Other Projects' />
+              gname='Responsive Web Design'
+              name={['Survey Form']}
+              link={['SF']} />
           </div>
         </li>
         <li><Link to="/skills">Skills</Link></li>
@@ -57,6 +63,7 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path='SF' element={<SurveyForm/>}/>
           <Route path="/RQM" element={<RandomQuoteMachine />} />
           <Route path="/MP" element={<MarkdownPreviwer />} />
           <Route path="/DM" element={<DrumMachine />} />

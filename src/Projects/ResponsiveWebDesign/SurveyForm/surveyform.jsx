@@ -3,7 +3,7 @@ import './style.css';
 
 const RegistrationForm = () => {
   return (
-    <div id="container">
+    <div id="SurveyForm">
       <header>
         <h1 id="title">
           Registration Form

@@ -1,8 +1,4 @@
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-  }
+/* 
   
   html {
     font-size: 16px;
@@ -15,33 +11,33 @@
     background-image: url(https://i.pinimg.com/736x/30/c7/3f/30c73f95cf6e731ef9669c24a8ecbb1e.jpg);
     background-attachment: fixed;
     height: 100vh;
-  }
-  body div#container {
-    height: 90%;
+  }*/
+  #SurveyForm {
+    height: 90vh;
     width: -moz-fit-content;
     width: fit-content;
   }
   @media only screen and (orientation: portrait) {
-    body div#container {
+    body div#SurveyForm {
       width: 90%;
     }
   }
-  body div#container header {
+  body div#SurveyForm header {
     border-radius: 10px 10px 0px 0px;
     text-align: center;
     height: 20%;
   }
-  body div#container header p#description {
+  body div#SurveyForm header p#description {
     margin-top: 16px;
   }
-  body div#container form#survey-form {
+  body div#SurveyForm form#survey-form {
     height: 80%;
     border-radius: 0px 0px 10px 10px;
   }
-  body div#container form#survey-form .form-inputs,
-  body div#container form#survey-form #dropdown,
-  body div#container form#survey-form .submit-button,
-  body div#container form#survey-form textarea {
+  body div#SurveyForm form#survey-form .form-inputs,
+  body div#SurveyForm form#survey-form #dropdown,
+  body div#SurveyForm form#survey-form .submit-button,
+  body div#SurveyForm form#survey-form textarea {
     color: black;
     display: block;
     width: 100%;
@@ -49,8 +45,8 @@
     margin: 10px 0%;
     font-size: 1rem;
   }
-  body div#container header,
-  body div#container form {
+  body div#SurveyForm header,
+  body div#SurveyForm form {
     word-break: break-all;
     overflow: auto;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(38, 35, 39, 0.7) 20%, rgba(128, 120, 133, 0.7) 100%);
@@ -94,4 +90,4 @@
     100% {
       width: 100%;
     }
-  }
+  } 
